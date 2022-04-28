@@ -18,8 +18,6 @@ namespace BookAPI.Controllers
         {
             _userRepository = userRepository;
         }
-
-
         [HttpGet]
         public async Task<IEnumerable<User>> GetUsers() //tum kayıtlı kullanıcıları dondurme metodum
         {
@@ -64,6 +62,7 @@ namespace BookAPI.Controllers
             else
                 return NotFound();
         }
+
 
     }
 }
